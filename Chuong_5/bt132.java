@@ -1,4 +1,5 @@
 package bt_java_tienhq.Chuong_5;
+
 // Viết hàm liệt kê các giá trị chẵn trong mảng một chiều các số nguyên
 import java.util.Scanner;
 
