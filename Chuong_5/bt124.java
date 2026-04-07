@@ -1,3 +1,4 @@
+package bt_java_tienhq.Chuong_5;
 import java.util.Scanner;
 //Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không?
 public class bt124 {
