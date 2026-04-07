@@ -1,4 +1,4 @@
-package bt_java_tienhq.Chuong_5;
+package bt_java_tienhq.Chuong_5.ky_thuat_xuat_nhap_mang;
 
 // Viết hàm nhập,xuất mảng một chiều các số thực.
 import java.util.Scanner;
