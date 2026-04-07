@@ -17,23 +17,24 @@ public class bt125 {
         for (long x : arr) {
             System.out.print(x + " ");
         }
-         
+
         System.out.print("\nCác số nguyên tố nhỏ hơn 100 trong mảng là : ");
-        for(long x : arr){
-            if (x <100 && isPrime(x)){
+        for (long x : arr) {
+            if (x < 100 && isPrime(x)) {
                 System.out.print(x + " ");
-                
+
             }
         }
 
         sc.close();
     }
-    public static boolean isPrime( long n){
-        if (n < 2){
+
+    public static boolean isPrime(long n) {
+        if (n < 2) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++){
-            if (n % i == 0){
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
