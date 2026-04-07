@@ -1,7 +1,6 @@
-package Chuong_5;
-
+package bt_java_tienhq.Chuong_5;
 import java.util.Scanner;
-
+//Tìm giá trị lớn nhất trong mảng một chiều các số thực.
 public class bt122 {
         public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
