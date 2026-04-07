@@ -33,10 +33,10 @@ public class bt127 {
         for (double x : arr) {
             System.out.print(x + " ");
         }
-        
+
         System.out.print("\nDãy đã sắp xếp bằng thư viện là : ");
         Arrays.sort(arr);
-        for (double x : arr){
+        for (double x : arr) {
             System.out.print(x + " ");
         }
 
