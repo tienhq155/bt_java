@@ -1,3 +1,4 @@
+package bt_java_tienhq.Chuong_5;
 import java.util.Scanner;
 // Viết hàm tìm một vị trí mà giá trị tại vị trí đó là một giá trị nhỏ nhất trong mảng một chiều các số nguyên. 
 public class bt123 {
