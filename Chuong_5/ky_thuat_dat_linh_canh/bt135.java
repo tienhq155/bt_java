@@ -1,4 +1,4 @@
-package bt_java_tienhq.Chuong_5;
+package bt_java_tienhq.Chuong_5.ky_thuat_dat_linh_canh;
 
 import java.util.Scanner;
 
