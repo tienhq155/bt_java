@@ -1,6 +1,7 @@
 package bt_java_tienhq.Chuong_5;
 
 import java.util.Scanner;
+
 //Tìm “số chẵn cuối cùng” trong mảng một chiều các số nguyên 
 //(chancuoi). Nếu mảng không có giá trị chẵn thì trả về giá trị -1.
 public class bt136 {
@@ -21,13 +22,13 @@ public class bt136 {
             if (arr[i] % 2 == 0) {
                 System.out.print("\nSố chẵn cuối cùng của mảng là " + arr[i]);
                 break;
-            }    
+            }
             // else{
-            //     System.out.print("\nSố chẵn cuối cùng của mảng là " + (-1));
+            // System.out.print("\nSố chẵn cuối cùng của mảng là " + (-1));
             // }
         }
-        
+
         sc.close();
     }
-    
+
 }
