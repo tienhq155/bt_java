@@ -18,13 +18,13 @@ public class bt137 {
         for (double x : arr) {
             System.out.print(x + " ");
         }
-        int min = 0;
+        int vitrinhonhat = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < arr[min]) {
-                min = i;
+            if (arr[i] < arr[vitrinhonhat]) {
+                vitrinhonhat = i;
             }
         }
-        System.out.print("Vị trí của số nhỏ nhất trong mảng là : " + (min+1));
+        System.out.print("Vị trí của số nhỏ nhất trong mảng là : " + (vitrinhonhat+1));
 
         sc.close();
     }
