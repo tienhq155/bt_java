@@ -9,25 +9,25 @@ public class bt136 {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
 
-        double[] arr = new double[sc.nextInt()];
+        int n = sc.nextInt();
+        int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Nhập Phần Tử Thứ " + (i + 1) + ":");
-            arr[i] = sc.nextDouble();
+            arr[i] = sc.nextInt();
         }
         System.out.print("Mảnh Vừa NHập Là : ");
         for (double x : arr) {
             System.out.print(x + " ");
         }
+        int chancuoi = -1;
         for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] % 2 == 0) {
-                System.out.print("\nSố chẵn cuối cùng của mảng là " + arr[i]);
+                chancuoi = (int) arr[i];
                 break;
             }
-            // else{
-            // System.out.print("\nSố chẵn cuối cùng của mảng là " + (-1));
-            // }
-        }
 
+        }
+        System.out.print("\nSố chẵn cuối cùng trong mảng là " + chancuoi);
         sc.close();
     }
 
