@@ -10,23 +10,27 @@ public class bt138 {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
 
-        double[] arr = new double[sc.nextInt()];
+        int n = sc.nextInt();
+        int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Nhập Phần Tử Thứ " + (i + 1) + ":");
-            arr[i] = sc.nextDouble();
+            arr[i] = sc.nextInt();
         }
         System.out.print("Mảnh Vừa NHập Là : ");
-        for (double x : arr) {
+        for (int x : arr) {
             System.out.print(x + " ");
         }
-        for (int i  = 0; i < arr.length; i++) {
+        int vitrichandau = -1;
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
-                System.out.print("\nSố chẵn đầu tiên của mảng là " + arr[i]);
+                vitrichandau = i;
                 break;
             }
-            // else{
-            // System.out.print("\nSố chẵn cuối cùng của mảng là " + (-1));
-            // }
+        }
+        if (vitrichandau == -1) {
+            System.out.print("\nVị trí của số chẵn đầu tiên trong mảng là -1 ");
+        } else {
+            System.out.print("\nVị trí của số chẵn đầu tiên trong mảng là " + (vitrichandau + 1));
         }
 
         sc.close();
