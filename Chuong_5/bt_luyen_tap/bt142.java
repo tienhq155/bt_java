@@ -18,9 +18,9 @@ public class bt142 {
         for (int x : arr) {
             System.out.print(x + " ");
         }
-        int nhonhat = 0;
+        int nhonhat = arr[0];
         for (int x : arr) {
-            if (nhonhat == -1 || x < nhonhat) {
+            if (x < nhonhat) {
                 nhonhat = x;
             }
         }
