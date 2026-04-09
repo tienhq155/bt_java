@@ -21,8 +21,10 @@ public class bt148 {
         }
         int nguyentocuoi = -1;
         for (int i = arr.length - 1; i >= 0; i--) {
-            if (isPrime(nguyentocuoi))
+            if (isPrime(arr[i])) {
                 nguyentocuoi = arr[i];
+                break;
+            }
         }
         if (nguyentocuoi == -1) {
             System.out.print("\nSố nguyên tố cuối cùng trong mảng là -1");
