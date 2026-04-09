@@ -18,12 +18,12 @@ public class bt126 {
         for (double x : arr) {
             System.out.print(x + " ");
         }
-        sc.close();
         for (double x : arr) {
             if (x < 0) {
                 sum += x;
             }
         }
-        System.out.println("Tổng các giá trị âm trong mảng là : " + sum);
+        System.out.println("\nTổng các giá trị âm trong mảng là : " + sum);
+        sc.close();
     }
 }
