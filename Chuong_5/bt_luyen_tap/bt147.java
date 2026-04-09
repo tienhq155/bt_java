@@ -18,14 +18,15 @@ public class bt147 {
         for (double x : arr) {
             System.out.print(x + " ");
         }
-        sc.close();
         for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] > 0) {
                 duongcuoi = arr[i];
-
+                break;
             }
         }
         System.out.println("Giá trị dương cuối cùng trong mảng là : " + duongcuoi);
+        sc.close();
+
     }
 
 }
