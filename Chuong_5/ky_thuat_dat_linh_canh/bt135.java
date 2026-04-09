@@ -31,9 +31,6 @@ public class bt135 {
             System.out.print(x + " ");
 
         }
-
-        sc.close();
-
         for (double x : arr) {
 
             if (x > 0) {
@@ -46,7 +43,8 @@ public class bt135 {
 
         }
 
-        System.out.println("Giá trị dương đầu tiên trong mảng là : " + duongdau);
+        System.out.println("\nGiá trị dương đầu tiên trong mảng là : " + duongdau);
+        sc.close();
 
     }
 
