@@ -21,7 +21,7 @@ public class bt144 {
         }
         int nguyentodau = -1;
         for (int x : arr) {
-            if (isPrime(nguyentodau)) {
+            if (isPrime(x)) {
                 nguyentodau = x;
                 break;
             }
