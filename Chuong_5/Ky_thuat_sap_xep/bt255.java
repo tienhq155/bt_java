@@ -29,5 +29,6 @@ public class bt255 {
         for (double a : arr) {
             System.out.print(a + " ");
         }
+        sc.close();
     }
 }
