@@ -1,10 +1,11 @@
-package bt_java_tienhq.Chuong_5.bt_luyen_tu_duy;
+package bt_java_tienhq.Chuong_5.ky_thuat_dem;
 
-// Cho mảng một chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x,x]
-// chứa tất cả các giá trị trong mảng (timx).
 import java.util.Scanner;
 
-public class bt158 {
+// Đếm số lượng số chẵn có trong mảng một chiều các số nguyên
+// (demchan).
+
+public class bt216 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
@@ -15,19 +16,16 @@ public class bt158 {
             arr[i] = sc.nextInt();
         }
         System.out.print("Mảnh Vừa NHập Là : ");
-        for (int a : arr) {
+        for (double a : arr) {
             System.out.print(a + " ");
         }
-
-        double x = Math.abs(arr[0]);
-
-        for (int i = 0; i < arr.length; i++) {
-
-            if (Math.abs(arr[i]) > x) {
-                x = Math.abs(arr[i]);
+        int demchan = 0;
+        for (int x : arr) {
+            if (x % 2 == 0) {
+                demchan++;
             }
         }
-        System.out.println("\nGiá trị x tìm được là: [" + x + ", -" + x + "]");
+        System.out.print("\nkết quả là : " + demchan);
         sc.close();
     }
 }

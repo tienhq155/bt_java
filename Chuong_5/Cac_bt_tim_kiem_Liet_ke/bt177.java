@@ -27,5 +27,6 @@ public class bt177 {
                 System.out.print("Các số có giá trị trong khoảng [ " + x + "] và [" + y + "] : " + a);
             }
         }
+        sc.close();
     }
 }

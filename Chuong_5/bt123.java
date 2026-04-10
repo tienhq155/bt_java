@@ -19,5 +19,6 @@ public class bt123 {
             i++;
         } while (i < arr.length);
         System.out.println("Vị trí của giá trị nhỏ nhất là : " + (min + 1));
+        sc.close();
     }
 }

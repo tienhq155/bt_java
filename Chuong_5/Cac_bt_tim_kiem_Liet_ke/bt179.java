@@ -25,5 +25,6 @@ public class bt179 {
                                 + arr[i]);
             }
         }
+        sc.close();
     }
 }

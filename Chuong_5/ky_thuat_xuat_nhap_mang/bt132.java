@@ -19,5 +19,6 @@ public class bt132 {
                 System.out.print(x + " ");
             }
         }
+        sc.close();
     }
 }

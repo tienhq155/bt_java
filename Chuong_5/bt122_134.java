@@ -20,5 +20,6 @@ public class bt122_134 {
             }
         }
         System.out.println("Giá trị lớn nhất trong mảng là : " + max);
+        sc.close();
     }
 }

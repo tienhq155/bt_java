@@ -30,6 +30,7 @@ public class bt163 {
         } else {
             System.out.print("\nSố chính phương đầu tiên trong mảng là: " + chinhphuong);
         }
+        sc.close();
     }
 
     public static boolean perfectSquare(int n) {

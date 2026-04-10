@@ -29,5 +29,6 @@ public class bt178 {
                         .print("Các số có giá trị trong khoảng [ " + x + "] và [" + y + "] và là số chẵn : " + a + " ");
             }
         }
+        sc.close();
     }
 }

@@ -27,6 +27,7 @@ public class bt162 {
         } else {
             System.out.print("\nVị trí thỏa điều kiện là : " + vitri);
         }
+        sc.close();
     }
 
     public static int timvitri(double[] arr) {

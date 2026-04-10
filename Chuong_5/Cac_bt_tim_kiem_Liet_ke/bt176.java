@@ -22,5 +22,6 @@ public class bt176 {
                 System.out.print(a + " ");
             }
         }
+        sc.close();
     }
 }

@@ -19,5 +19,6 @@ public class bt133 {
                 System.out.print((i + 1) + " ");
             }
         }
+        sc.close();
     }
 }
