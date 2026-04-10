@@ -31,7 +31,7 @@ public class bt164 {
         } else {
             System.out.print("\nSố gánh đầu tiên trong mảng là: " + ganh);
         }
-
+        sc.close();
     }
 
     public static boolean isganh(int n) {
