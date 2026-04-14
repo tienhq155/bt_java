@@ -1,10 +1,10 @@
-package bt_java_tienhq.Chuong_5.Ky_thuat_tinh_tong;
+package bt_java_tienhq.Chuong_5.ky_thuat_dem;
 
+//Hãy đếm số lượng “số nguyên tố” có trong mảng một chiều các số 
+//nguyên (demnguyento). 
 import java.util.Scanner;
 
-// Tính trung bình cộng các số nguyên tố trong mảng một chiều các số 
-// nguyên (tbnguyento). 
-public class bt211 {
+public class bt223 {
     public static void main(String[] arger) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
@@ -18,21 +18,13 @@ public class bt211 {
         for (int a : arr) {
             System.out.print(a + " ");
         }
-        int tbnguyento = 0;
-        int dem = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (isPrime(arr[i])) {
-                tbnguyento += arr[i];
-                dem++;
+        int demnguyento = 0;
+        for (int a : arr) {
+            if (isPrime(a)) {
+                demnguyento++;
             }
         }
-        if (dem > 0) {
-            tbnguyento /= dem;
-        } else {
-            tbnguyento = 0;
-        }
-        System.out.print("\nKết quả là : " + tbnguyento);
-
+        System.out.print("\nKết quả là : " + demnguyento);
         sc.close();
     }
 

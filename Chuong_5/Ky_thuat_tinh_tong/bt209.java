@@ -2,9 +2,8 @@ package bt_java_tienhq.Chuong_5.Ky_thuat_tinh_tong;
 
 import java.util.Scanner;
 
-// Tính trung bình cộng các số nguyên tố trong mảng một chiều các số 
-// nguyên (tbnguyento). 
-public class bt211 {
+// Tính tổng các giá trị đối xứng trong mảng các số nguyên (tongdoixung). 
+public class bt209 {
     public static void main(String[] arger) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
@@ -18,33 +17,24 @@ public class bt211 {
         for (int a : arr) {
             System.out.print(a + " ");
         }
-        int tbnguyento = 0;
-        int dem = 0;
+        long tongdoixung = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (isPrime(arr[i])) {
-                tbnguyento += arr[i];
-                dem++;
+            if (ischeck(arr[i])) {
+                tongdoixung += arr[i];
             }
         }
-        if (dem > 0) {
-            tbnguyento /= dem;
-        } else {
-            tbnguyento = 0;
-        }
-        System.out.print("\nKết quả là : " + tbnguyento);
-
+        System.out.print("\nKết quả là : " + tongdoixung);
         sc.close();
     }
 
-    public static boolean isPrime(long n) {
-        if (n < 2) {
-            return false;
+    public static boolean ischeck(int n) {
+        int temp = n;
+        long sodaonguoc = 0;
+        while (temp > 0) {
+            int chuso = temp % 10;
+            sodaonguoc = sodaonguoc * 10 + chuso;
+            temp = temp / 10;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
+        return n == sodaonguoc;
     }
 }

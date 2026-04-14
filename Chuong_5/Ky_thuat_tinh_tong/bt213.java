@@ -2,9 +2,9 @@ package bt_java_tienhq.Chuong_5.Ky_thuat_tinh_tong;
 
 import java.util.Scanner;
 
-// Tính trung bình cộng các số nguyên tố trong mảng một chiều các số 
-// nguyên (tbnguyento). 
-public class bt211 {
+// . Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng một chiều 
+// các số thực (tbclonhon)
+public class bt213 {
     public static void main(String[] arger) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
@@ -18,33 +18,21 @@ public class bt211 {
         for (int a : arr) {
             System.out.print(a + " ");
         }
-        int tbnguyento = 0;
+
+        System.out.print("\nNhập X : ");
+        int x = sc.nextInt();
+        int tbclonhon = 0;
         int dem = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (isPrime(arr[i])) {
-                tbnguyento += arr[i];
+            if (arr[i] > x) {
+                tbclonhon += arr[i];
                 dem++;
             }
         }
         if (dem > 0) {
-            tbnguyento /= dem;
-        } else {
-            tbnguyento = 0;
+            tbclonhon /= dem;
         }
-        System.out.print("\nKết quả là : " + tbnguyento);
-
+        System.out.print("\nKết quả là : " + tbclonhon);
         sc.close();
-    }
-
-    public static boolean isPrime(long n) {
-        if (n < 2) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
     }
 }

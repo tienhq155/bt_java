@@ -2,9 +2,9 @@ package bt_java_tienhq.Chuong_5.Ky_thuat_tinh_tong;
 
 import java.util.Scanner;
 
-// Tính trung bình cộng các số nguyên tố trong mảng một chiều các số 
-// nguyên (tbnguyento). 
-public class bt211 {
+//Tính khoảng cách trung bình giữa các giá trị trong mảng 
+//(khoangcachtb). 
+public class bt215 {
     public static void main(String[] arger) {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nNhập số lượng phần tử : ");
@@ -18,33 +18,18 @@ public class bt211 {
         for (int a : arr) {
             System.out.print(a + " ");
         }
-        int tbnguyento = 0;
+        int khoangcachtb = 0;
         int dem = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (isPrime(arr[i])) {
-                tbnguyento += arr[i];
+        for (int i = 0; i < arr.length - 1; i++) {
+            {
+                khoangcachtb += Math.abs(arr[i] - arr[i + 1]);
                 dem++;
             }
         }
         if (dem > 0) {
-            tbnguyento /= dem;
-        } else {
-            tbnguyento = 0;
+            khoangcachtb /= dem;
         }
-        System.out.print("\nKết quả là : " + tbnguyento);
-
+        System.out.print("\nKết Quả là : " + khoangcachtb);
         sc.close();
-    }
-
-    public static boolean isPrime(long n) {
-        if (n < 2) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
     }
 }
