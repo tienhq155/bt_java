@@ -38,5 +38,6 @@ public class bt221 {
         } else {
             System.out.print("0");
         }
+        sc.close();
     }
 }

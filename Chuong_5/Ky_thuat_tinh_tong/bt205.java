@@ -18,5 +18,6 @@ public class bt205 {
         for (int a : arr) {
             System.out.print(a + " ");
         }
+        sc.close();
     }
 }

@@ -32,5 +32,6 @@ public class bt229 {
             }
         }
         System.out.print("kết quả là : " + demphanbiet);
+        sc.close();
     }
 }

@@ -20,6 +20,6 @@ public class bt230 {
         for (int x : arr) {
             System.out.print(x + " ");
         }
-
+        sc.close();
     }
 }
