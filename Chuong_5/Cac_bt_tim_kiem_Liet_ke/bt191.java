@@ -21,7 +21,7 @@ public class bt191 {
         }
         System.out.print("\nKết quả là : ");
         boolean kiemtra = false;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length - 1; i++) {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 System.out.print(arr[i] + " ");
                 kiemtra = true;
